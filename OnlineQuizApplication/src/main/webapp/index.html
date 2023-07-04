@@ -1,48 +1,148 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Animated Navbar</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        .navbar {
-            -webkit-transition: all 0.3s ease;
-            -moz-transition: all 0.3s ease;
-            -o-transition: all 0.3s ease;
-            transition: all 0.3s ease;
-        }
+<title>My Web Application</title>
+<style>
+/* Add your CSS styles here */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
 
-        .navbar:hover {
-            background-color: #D2D2F4;
-        }
-    </style>
+h2 {
+	text-decoration: underline;
+}
+
+.hero {
+	background-image: url("background-image.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: initial;
+	align-items: center;
+	text-align: center;
+	color: #000;
+}
+
+.hero h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.hero p {
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+.cta-button {
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 18px;
+}
+
+.cta-button:hover {
+	background-color: #555;
+}
+
+.features {
+	background-color: #f1f1f1;
+	padding: 40px 20px;
+	text-align: center;
+}
+
+.feature-item {
+	margin-bottom: 40px;
+}
+
+.feature-item img {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.feature-item h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.feature-item p {
+	font-size: 16px;
+	color: #666;
+}
+
+nav {
+	background-color: #333;
+	color: #fff;
+	width: 100%; margin-left : 0; margin-right : 0;
+	position: fixed;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	color: #fff;
+}
+
+nav ul li a:hover {
+	background-color: #555;
+}
+</style>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="#"><img alt="Logo" src="logo.png" style="width: 700px; height: 500px;"></a>
-        <button class="navbar-toggler" type="button" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#"><h3>Home </h3></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><h3>Register</h3></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><h3>Login</h3></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><h3>About</h3></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#hero">Home</a></li>
+			<li><a href="#login">Login</a></li>
+			<li><a href="#registration">Registration</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#features">About Us</a></li>
+		</ul>
+	</nav>
+	<section id="hero" class="hero">
+		<p>
+		<h3>Hey All!! This is a simple web application which deals with
+			creating and attempting quizes.</h3>
+		</p>
+	</section>
+
+	<section id="features" class="features">
+		<h2>Developed by</h2>
+		<div class="feature-item">
+			<img src="logo.png" alt="Feature 1"
+				style="width: 700px; height: 500px;">
+			<h3>Name : Rohit Chhotkamal Gupta</h3>
+			<h3>Project : Online Quiz Application</h3>
+			<h3>Institution : Thakur College of Science And Commerce</h3>
+			<h3>Class : Ty BscCs-A</h3>
+			<h3>Roll No : 1112</h3>
+			<p></p>
+		</div>
+	</section>
+
+	<!-- Add more sections and content as needed -->
+
 </body>
+
 </html>
