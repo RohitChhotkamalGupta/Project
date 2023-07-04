@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animated Navbar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .navbar {
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        .navbar:hover {
+            background-color: #D2D2F4;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#"><img alt="Logo" src="logo.png" style="width: 700px; height: 500px;"></a>
+        <button class="navbar-toggler" type="button" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><h3>Home </h3></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><h3>Register</h3></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><h3>Login</h3></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><h3>About</h3></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
