@@ -3,6 +3,8 @@
 
 <head>
 <title>My Web Application</title>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 /* Add your CSS styles here */
 body {
@@ -16,16 +18,14 @@ h2 {
 }
 
 .hero {
-	background-image: url("background-image.jpg");
-	background-size: cover;
-	background-position: center;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: initial;
-	align-items: center;
+	border: solid black;
+	background-color: #f1f1f1;
+	padding: 40px 20px;
 	text-align: center;
-	color: #000;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	margin-top: 100px;
 }
 
 .hero h1 {
@@ -52,10 +52,20 @@ h2 {
 }
 
 .features {
+	border: solid black;
 	background-color: #f1f1f1;
 	padding: 40px 20px;
 	text-align: center;
-	border : solid black ;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+.contacts {
+	border: solid black;
+	background-color: #f1f1f1;
+	padding: 40px 20px;
+	text-align: center;
 	margin-left: 50px;
 	margin-right: 50px;
 	margin-bottom: 50px;
@@ -82,12 +92,13 @@ h2 {
 }
 
 nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 	background-color: #333;
 	color: #fff;
-	width: 100%; margin-left : 0; margin-right : 0;
-	position: fixed;
-	margin-left: 0;
-	margin-right: 0;
+	z-index: 100;
 }
 
 nav ul {
@@ -118,9 +129,10 @@ nav ul li a:hover {
 	<nav>
 		<ul>
 			<li><a href="#hero">Home</a></li>
-			<li><a href="#login">Login</a></li>
-			<li><a href="#registration">Registration</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a href="Registration.jsp">Register</a></li>
+			<li><a href="#login">Create Quiz</a></li>
+			<li><a href="#registration">Join Quiz</a></li>
+			<li><a href="#contacts">Contact</a></li>
 			<li><a href="#features">About Us</a></li>
 		</ul>
 	</nav>
@@ -130,7 +142,26 @@ nav ul li a:hover {
 			creating and attempting quizes.</h3>
 		</p>
 	</section>
-
+	<section id="contacts" class="contacts">
+		<h2>Contact details</h2>
+		<h3>
+			Instagram : <a href="https://www.instagram.com/rohittt.22/"
+				class="fa fa-instagram"></a>
+		</h3>
+		<h3>
+			Facebook : <a href="https://www.facebook.com/rohittt.21"
+				class="fa fa-facebook"></a>
+		</h3>
+		<h3>
+			Github : <a href="https://github.com/RohitChhotkamalGupta/"
+				class="fa fa-github"></a>
+		</h3>
+		<h3>
+			LinkedIn : <a
+				href="https://www.linkedin.com/in/rohit-gupta-38208527b/"
+				class="fa fa-linkedin"></a>
+		</h3>
+	</section>
 	<section id="features" class="features">
 		<h2>Developed by</h2>
 		<div class="feature-item">
@@ -140,7 +171,7 @@ nav ul li a:hover {
 			<h3>Project : Online Quiz Application</h3>
 			<h3>Institution : Thakur College of Science And Commerce</h3>
 			<h3>Class : Ty BscCs-A</h3>
-			<h3>Roll No : 003</h3>
+			<h3>Roll No : 1112</h3>
 			<p></p>
 		</div>
 	</section>
