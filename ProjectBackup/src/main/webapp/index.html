@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My Web Application</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-image: url("bg2.jpg");
+			background-size: cover;
+		}
+		h2 {
+			text-decoration: none;
+		}
+		.hero {
+			border: 2px solid black;
+			border-radius: 20px;
+			background-color: white;
+			padding: 20px;
+			text-align: center;
+			margin: 100px auto 50px;
+			width: 80%;
+			max-width: 600px;
+			transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+		}
+		.hero:hover {
+			background-color: rgb(1, 19, 47);
+			transform: scale(1.15);
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+			border: 2px solid white;
+			color: white;
+		}
+		.hero h1 {
+			font-size: 48px;
+			margin-bottom: 20px;
+		}
+		.hero p {
+			font-size: 24px;
+			margin-bottom: 40px;
+		}
+		.cta-button {
+			padding: 10px 20px;
+			background-color: #333;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+			font-size: 18px;
+		}
+		.cta-button:hover {
+			background-color: #555;
+		}
+		.features {
+			border: 2px solid black;
+			border-radius: 20px;
+			background-color: white;
+			padding: 20px;
+			text-align: center;
+			margin: 0 auto 50px;
+			width: 90%;
+			max-width: 600px;
+			transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+		}
+		.features:hover {
+			background-color: rgb(1, 19, 47);
+			transform: scale(1.05);
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+			border: 2px solid white;
+			color: white;
+		}
+		.feature-item {
+			margin-bottom: 40px;
+		}
+		.feature-item img {
+			width: 200px;
+			height: 200px;
+			margin-bottom: 20px;
+			max-width: 100%;
+			border-radius: 10px;
+		}
+		.feature-item h3 {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+		.feature-item p {
+			font-size: 16px;
+			color: #666;
+		}
+		.contacts {
+			border: 2px solid black;
+			border-radius: 20px;
+			background-color: white;
+			padding: 20px;
+			text-align: center;
+			margin: 0 auto 50px;
+			width: 80%;
+			max-width: 600px;
+			transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+		}
+		.contacts:hover {
+			background-color: rgb(1, 19, 47);
+			transform: scale(1.05);
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+			border: 2px solid white;
+			color: white;
+		}
+		nav {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background-color: rgb(2, 11, 25);
+			color: #fff;
+			z-index: 100;
+			box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+			font-family: 'Arial', sans-serif;
+			transition: background-color 0.3s ease-in-out;
+		}
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: rgb(2, 11, 25);
+		}
+		nav ul li {
+			float: left;
+			margin-right: 20px;
+		}
+		nav ul li a {
+			display: block;
+			padding: 15px 20px;
+			text-decoration: none;
+			color: #fff;
+			transition: color 0.3s ease-in-out;
+		}
+		nav ul li a:hover {
+			color: #ff9900;
+		}
+		@media screen and (max-width: 768px) {
+			nav ul {
+				display: none;
+				position: absolute;
+				background-color: #007BFF;
+				width: 100%;
+				text-align: center;
+				top: 60px;
+			}
+
+			nav ul li {
+				display: block;
+				margin-bottom: 10px;
+			}
+			.menu-toggle {
+				display: block;
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				color: #fff;
+				font-size: 24px;
+				cursor: pointer;
+				z-index: 101;
+			}
+
+			.menu-toggle.open {
+				top: 60px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="#hero">Home</a></li>
+			<li><a href="Registration.jsp">Register</a></li>
+			<li><a href="LoginForCreatingQuiz.jsp">Create Quiz</a></li>
+			<li><a href="LoginForJoiningQuiz.jsp">Join Quiz</a></li>
+			<li><a href="#contacts">Contact</a></li>
+			<li><a href="#features">About Us</a></li>
+		</ul>
+	</nav>
+	<section id="hero" class="hero">
+		<p>
+		<h3>Hey All!! This is a simple web application which deals with
+			creating and attempting quizes.</h3>
+		</p>
+	</section>
+	<section id="contacts" class="contacts">
+		<h2>Contact details</h2>
+		<h3>
+			Instagram : <a href="https://www.instagram.com/rohittt.22/" class="fa fa-instagram"></a>
+		</h3>
+		<h3>
+			Facebook : <a href="https://www.facebook.com/rohittt.21" class="fa fa-facebook"></a>
+		</h3>
+		<h3>
+			Github : <a href="https://github.com/RohitChhotkamalGupta/" class="fa fa-github"></a>
+		</h3>
+		<h3>
+			LinkedIn : <a href="https://www.linkedin.com/in/rohit-gupta-38208527b/" class="fa fa-linkedin"></a>
+		</h3>
+
+	</section>
+	<section id="features" class="features">
+		<h2>Developed by</h2>
+		<div class="feature-item">
+			<img src="logo-no-background.png" alt="Feature 1">
+			<h3>Name: Rohit Chhotkamal Gupta</h3>
+			<h3>Project: Online Quiz Application</h3>
+			<h3>Institution: Thakur College of Science And Commerce</h3>
+			<h3>Class: Ty BscCs-A</h3>
+			<h3>Roll No: 003</h3>
+		</div>
+	</section>
+</body>
+</html>
